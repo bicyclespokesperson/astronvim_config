@@ -84,7 +84,7 @@ return {
         ["<CR>"] = {":", desc = ""},
         ["H"] = { "H7k", desc = "" },
         ["L"] = { "L7j", desc = "" },
-        ["<Leader>lt"] = { ":ClangdSwitchSourceHeader<CR>", desc = "Toggle source/header" },
+        ['<Leader>lt'] = { ":ClangdSwitchSourceHeader<CR>", desc = "Toggle source/header" },
         ["<Leader>;"] = { "mvA;<ESC>`v", desc = "Append ; to line" },
       },
     },
