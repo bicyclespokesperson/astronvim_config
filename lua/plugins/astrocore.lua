@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+--if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
@@ -32,6 +32,8 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
+        scrolloff = 7,
+        whichwrap = "<,>,[,],b,h,l,s",
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -66,7 +68,13 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+        ["<CR>"] = {":", desc = ""},
+        ["H"] = { "H7k", desc = "" },
+        ["L"] = { "L7j", desc = "" },
+        ["<Leader>lt"] = { ":ClangdSwitchSourceHeader<CR>", desc = "Toggle source/header" },
+        ["<Leader>;"] = { "mvA;<ESC>`v", desc = "Append ; to line" },
       },
     },
   },
 }
+
