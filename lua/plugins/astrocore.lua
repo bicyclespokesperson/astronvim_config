@@ -47,6 +47,7 @@ return {
         wrap = false, -- sets vim.opt.wrap
         scrolloff = 7,
         whichwrap = "<,>,[,],b,h,l,s",
+        clipboard = "",
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -81,13 +82,18 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
-        ["<CR>"] = {":", desc = ""},
+        ["<CR>"] = { ":", desc = "" },
         ["H"] = { "H7k", desc = "" },
         ["L"] = { "L7j", desc = "" },
-        ['<Leader>lt'] = { ":ClangdSwitchSourceHeader<CR>", desc = "Toggle source/header" },
+        ["<Leader>lt"] = { ":ClangdSwitchSourceHeader<CR>", desc = "Toggle source/header" },
         ["<Leader>;"] = { "mvA;<ESC>`v", desc = "Append ; to line" },
+        ["<M-c>"] = { '"*y', desc = "Copy to system clipboard" },
+        ["<M-v>"] = { '"*P', desc = "Copy to system clipboard" },
+      },
+      v = {
+        ["<M-c>"] = { '"*y', desc = "Copy to system clipboard" },
+        ["<M-v>"] = { '"*P', desc = "Paste from system clipboard" },
       },
     },
   },
 }
-
