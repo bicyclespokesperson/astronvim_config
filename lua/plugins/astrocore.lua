@@ -90,6 +90,7 @@ return {
         ["<Leader>;"] = { "mvA;<ESC>`v", desc = "Append ; to line" },
         ["<M-y>"] = { '"*y', desc = "Copy to system clipboard" },
         ["<M-p>"] = { '"*p', desc = "Paste from system clipboard" },
+        ["<Leader>X"] = { ":xall<CR>", desc = "Save and exit all files" },
       },
       v = {
         ["<M-y>"] = { '"*y', desc = "Copy to system clipboard" },
