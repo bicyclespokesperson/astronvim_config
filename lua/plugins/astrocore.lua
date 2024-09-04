@@ -89,7 +89,8 @@ return {
         ["<Leader>lt"] = { ":ClangdSwitchSourceHeader<CR>", desc = "Toggle source/header" },
         ["<Leader>;"] = { "mvA;<ESC>`v", desc = "Append ; to line" },
         ["<M-c>"] = { '"*y', desc = "Copy to system clipboard" },
-        ["<M-v>"] = { '"*P', desc = "Copy to system clipboard" },
+        ["<M-y>"] = { '"*y', desc = "Copy to system clipboard" },
+        ["<M-v>"] = { '"*P', desc = "Paste from system clipboard" },
       },
       v = {
         ["<M-c>"] = { '"*y', desc = "Copy to system clipboard" },
