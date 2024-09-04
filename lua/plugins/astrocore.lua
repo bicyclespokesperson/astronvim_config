@@ -82,7 +82,7 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
-        ["<CR>"] = { ":", desc = "" },
+        --["<CR>"] = { ":", desc = "" }, -- learn to use <leader>+w
         ["H"] = { "H7k", desc = "" },
         ["L"] = { "L7j", desc = "" },
         ["<Leader>lt"] = { ":ClangdSwitchSourceHeader<CR>", desc = "Toggle source/header" },
