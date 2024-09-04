@@ -48,6 +48,7 @@ return {
         scrolloff = 7,
         whichwrap = "<,>,[,],b,h,l,s",
         clipboard = "",
+        cmdheight = 2, -- Without this, using / to search for a string that isn't found will focus the "/" text area
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
