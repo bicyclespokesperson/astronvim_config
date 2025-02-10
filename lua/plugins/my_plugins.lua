@@ -1,11 +1,15 @@
 return {
   {
-    'machakann/vim-sandwich',
+    "machakann/vim-sandwich",
     name = "vim-sandwich",
-    opts = {
-    },
-    config = function ()
-    end,
+    opts = {},
+    config = function() end,
+  },
+  {
+    "knsh14/vim-github-link",
+    name = "vim-github-link",
+    opts = {},
+    config = function() end,
   },
   -- {
   --   "Joakker/lua-json5",
