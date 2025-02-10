@@ -74,6 +74,7 @@ return {
         ["H"] = { "H7k", desc = "" },
         ["L"] = { "L7j", desc = "" },
         ["<Leader>lt"] = { ":ClangdSwitchSourceHeader<CR>", desc = "Toggle source/header" },
+        ["<Leader>gh"] = { ":GetCurrentCommitLink<CR>", desc = "Copy GitHub link to clipboard" },
         ["<Leader>;"] = { "mvA;<ESC>`v", desc = "Append ; to line" },
         ["<M-y>"] = { '"*y', desc = "Copy to system clipboard" },
         ["<Leader>y"] = { '"*y', desc = "Copy to system clipboard" },
@@ -84,6 +85,7 @@ return {
       v = {
         ["<M-y>"] = { '"*y', desc = "Copy to system clipboard" },
         ["<Leader>y"] = { '"*y', desc = "Copy to system clipboard" },
+        ["<Leader>gh"] = { ":GetCurrentCommitLink<CR>", desc = "Copy GitHub link to clipboard" },
         ["<M-p>"] = { '"*p', desc = "Paste from system clipboard" },
       },
     },
