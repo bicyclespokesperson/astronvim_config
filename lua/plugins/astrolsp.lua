@@ -29,6 +29,7 @@ return {
           "sh", -- bash
           "proto", -- protobuf
           "ts", -- typescript
+          "java", -- java
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
