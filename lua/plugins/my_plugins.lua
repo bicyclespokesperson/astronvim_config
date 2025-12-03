@@ -23,7 +23,7 @@ return {
         use_local_fs = false,
         enable_builtin = false,
         default_remote = {"upstream", "origin"},
-        default_merge_method = "commit",
+        default_merge_method = "squash",
         ssh_aliases = {},
         picker = "telescope",
         comment_icon = "▎",
