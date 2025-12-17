@@ -28,7 +28,8 @@ return {
         ignore_filetypes = { -- disable format on save for specified filetypes
           "sh", -- bash
           "proto", -- protobuf
-          "ts", -- typescript
+          "typescript", -- typescript
+          "typescriptreact", -- tsx
           "java", -- java
         },
       },
@@ -44,6 +45,7 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      "ty",
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
@@ -51,6 +53,14 @@ return {
       clangd = {
         capabilities = { offsetEncoding = "utf-8" },
         filetypes = { "h", "c", "cpp", "cc", "mpp", "ixx" },
+      },
+      ty = {
+        cmd = { "ty", "server" },
+        filetypes = { "python" },
+        root_dir = require("lspconfig.util").root_pattern("pyproject.toml", "ty.toml", ".git"),
+        settings = {
+          ty = {},
+        },
       },
     },
     -- customize how language servers are attached
@@ -61,7 +71,8 @@ return {
       -- the key is the server that is being setup with `lspconfig`
       java_language_server = false, -- disable java_language_server since we use jdtls
       -- rust_analyzer = false, -- setting a handler to false will disable the set up of that language server
-      -- pyright = function(_, opts) require("lspconfig").pyright.setup(opts) end -- or a custom handler function can be passed
+      pyright = false, -- disabled in favor of ty
+      basedpyright = false, -- disabled in favor of ty
     },
     -- Configure buffer local auto commands to add when attaching a language server
     autocmds = {
