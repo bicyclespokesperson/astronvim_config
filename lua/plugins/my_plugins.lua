@@ -1,5 +1,10 @@
 return {
   {
+    "tomasiser/vim-code-dark",
+    lazy = false,
+    priority = 1000,
+  },
+  {
     "machakann/vim-sandwich",
     name = "vim-sandwich",
     opts = {},
