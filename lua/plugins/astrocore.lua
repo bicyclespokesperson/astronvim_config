@@ -49,7 +49,8 @@ return {
         whichwrap = "<,>,[,],b,h,l,s",
         clipboard = "",
         cmdheight = 2, -- Without this, using / to search for a string that isn't found will focus the "/" text area
-        shell = "nu",
+        shell = "/bin/bash",
+        shellcmdflag = "-c",
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
