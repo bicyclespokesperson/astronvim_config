@@ -11,4 +11,5 @@ return {
   -- import/override with your plugins folder
   { import = "astrocommunity.utility.lua-json5" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.rust" },
 }
