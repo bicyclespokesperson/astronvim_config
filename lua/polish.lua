@@ -1,3 +1,4 @@
+
 -- Disable treesitter highlighting for files with merge conflicts
 -- (workaround for nvim-treesitter nil node bug)
 vim.api.nvim_create_autocmd("BufReadPost", {
